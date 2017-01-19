@@ -1,0 +1,10 @@
+{
+  "extends": "rallycoding",
+  "rules": {
+    "global-require": 0,
+    "import/no-extraneous-dependencies": 0,
+    "space-in-parens": 0,
+    "max-len": 0,
+    "arrow-body-style": 0
+  }
+}
