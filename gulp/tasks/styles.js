@@ -1,8 +1,9 @@
 const gulp = require('gulp');
+const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
 
 gulp.task('styles', () =>
-  gulp.src('./app/assets/css/styles.css')
+  gulp.src('./app/assets/css/main.css')
     .pipe(postcss([
       require('postcss-import'),
       require('postcss-mixins'),
@@ -11,9 +12,10 @@ gulp.task('styles', () =>
       require('postcss-hexrgba'),
       require('autoprefixer')
     ]))
-    .on('error', err => {
+    .on('error', function (err) {
       console.log(err.toString());
       this.emit('end');
     })
-    .pipe(gulp.dest('./app/temp/styles'))
+    .pipe(rename('styles.css'))
+    .pipe(gulp.dest('./app/assets/css/'))
 );

@@ -14,20 +14,20 @@ gulp.task('dev', () => {
     browserSync.reload();
   });
 
-  watch('./app/assets/styles/**/*.css', () => {
-    // gulp.start('cssInject');
+  watch(['./app/assets/css/**/*.css', '!./app/assets/css/styles.css'], () => {
+    gulp.start('injectCss');
   });
 
-  watch('./app/assets/scripts/**/*.js', () => {
-    // gulp.start('scriptsRefresh');
+  watch('./app/assets/js/**/*.js', () => {
+    gulp.start('refreshScripts');
   });
 });
 
-gulp.task('cssInject', ['styles'], () =>
-  gulp.src('./app/temp/styles/styles.css')
+gulp.task('injectCss', ['styles'], () =>
+  gulp.src('./app/assets/css/styles.css')
     .pipe(browserSync.stream())
 );
 
-gulp.task('scriptsRefresh', ['scripts'], () => {
+gulp.task('refreshScripts', ['scripts'], () => {
   browserSync.reload();
 });

@@ -1,0 +1,30 @@
+.header {
+  &__intro {
+    font-size: 4rem;
+    font-weight: 100;
+    margin: 0;
+
+    @mixin atSmall {
+      font-size: 5rem;
+    }
+
+    @mixin atMedium {
+      font-size: 6rem;
+    }
+  }
+
+  &__vertical-link {
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    letter-spacing: 2px;
+    float: right;
+    position: fixed;
+    right: 0;
+    text-decoration: overline;
+    transform: rotateZ(90deg);
+    transform-origin: 0 100%;
+  }
+}
