@@ -490,29 +490,33 @@ body {
   text-shadow: 7px 7px orange;
 }
 
-.box {
+.wrapper {
   padding: 1rem;
 }
 
 @media (min-width: 426px) {
 
-  .box {
+  .wrapper {
     padding: 3rem 5rem;
   }
 }
 
 @media (min-width: 768px) {
 
-  .box {
+  .wrapper {
     padding: 4rem 6rem;
   }
 }
 
 @media (min-width: 1024px) {
 
-  .box {
+  .wrapper {
     padding: 5rem 7rem;
   }
+}
+
+.box {
+  position: relative;
 }
 
 .header__intro {
@@ -536,22 +540,33 @@ body {
 }
 
 .header__vertical-link {
-  -webkit-animation-name: blink;
-          animation-name: blink;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  cursor: pointer;
-  letter-spacing: 2px;
-  float: right;
-  position: fixed;
-  right: 0;
-  text-decoration: overline;
-  -webkit-transform: rotateZ(90deg);
-          transform: rotateZ(90deg);
-  -webkit-transform-origin: 0 100%;
-          transform-origin: 0 100%;
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  .header__vertical-link {
+    -webkit-animation-name: blink;
+            animation-name: blink;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    bottom: 0;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 2px;
+    position: fixed;
+    right: 20px;
+    text-decoration: overline;
+    z-index: 1;
+    bottom: auto;
+    right: 0;
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+    -webkit-transform-origin: 10% 50%;
+            transform-origin: 10% 50%;
+  }
 }

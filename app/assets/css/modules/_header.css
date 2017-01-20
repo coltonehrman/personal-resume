@@ -14,17 +14,25 @@
   }
 
   &__vertical-link {
-    animation-name: blink;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-    cursor: pointer;
-    letter-spacing: 2px;
-    float: right;
-    position: fixed;
-    right: 0;
-    text-decoration: overline;
-    transform: rotateZ(90deg);
-    transform-origin: 0 100%;
+    display: none;
+
+    @mixin atMedium {
+      animation-name: blink;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+      animation-iteration-count: infinite;
+      bottom: 0;
+      cursor: pointer;
+      display: inline-block;
+      letter-spacing: 2px;
+      position: fixed;
+      right: 20px;
+      text-decoration: overline;
+      z-index: 1;
+      bottom: auto;
+      right: 0;
+      transform: rotateZ(90deg);
+      transform-origin: 10% 50%;
+    }
   }
 }

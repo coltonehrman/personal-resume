@@ -1,15 +1,3 @@
 .box {
-  padding: 1rem;
-
-  @mixin atSmall {
-    padding: 3rem 5rem;
-  }
-
-  @mixin atMedium {
-    padding: 4rem 6rem;
-  }
-
-  @mixin atLarge {
-    padding: 5rem 7rem;
-  }
+  position: relative;
 }
