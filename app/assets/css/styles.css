@@ -465,8 +465,7 @@ template {
 }
 
 body {
-  font-family: 'Dosis', sans-serif;
-  color: #fff;
+  font-family: 'Quicksand', sans-serif;
 }
 
 @-webkit-keyframes blink {
@@ -520,9 +519,11 @@ body {
 }
 
 .header__intro {
+  color: #fff;
   font-size: 4rem;
-  font-weight: 100;
+  font-weight: 300;
   margin: 0;
+  max-width: 800px;
 }
 
 @media (min-width: 426px) {
@@ -540,6 +541,7 @@ body {
 }
 
 .header__vertical-link {
+  color: #fff;
   display: none;
 }
 
