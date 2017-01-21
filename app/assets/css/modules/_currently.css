@@ -1,0 +1,7 @@
+.currently {
+  &__heading {
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-align: center;
+  }
+}

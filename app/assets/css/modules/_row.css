@@ -1,0 +1,33 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  .column {
+    flex: 1;
+  }
+
+  &--gutters {
+
+    .column {
+      margin-right: 25px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-medium {
+      .column {
+        margin-right: 50px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &--spacing {
+    padding: 50px 0;
+  }
+}

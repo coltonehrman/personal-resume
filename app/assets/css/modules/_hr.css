@@ -1,0 +1,27 @@
+.hr {
+  width: 7%;
+
+  &--black {
+    border-color: #000;
+  }
+
+  &--thin {
+    border-bottom: 0;
+  }
+
+  &--wider {
+    width: 15%;
+  }
+
+  &--b-margin {
+    margin-bottom: 25px;
+
+    &-medium {
+      margin-bottom: 50px;
+    }
+
+    &-large {
+      margin-bottom: 75px;
+    }
+  }
+}

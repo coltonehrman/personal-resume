@@ -1,0 +1,7 @@
+.section {
+  background-color: #fafafa;
+
+  &--orange {
+    background-color: orange;
+  }
+}
