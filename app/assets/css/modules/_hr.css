@@ -1,8 +1,13 @@
 .hr {
+  border: 0;
+  border-top: 1px solid #000;
+  display: block;
+  height: 1px;
+  padding: 0;
   width: 7%;
 
-  &--black {
-    border-color: #000;
+  &--white {
+    border-color: #fff;
   }
 
   &--thin {

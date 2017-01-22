@@ -5,3 +5,16 @@
 body {
   font-family: 'Quicksand', sans-serif;
 }
+
+a {
+  color: #000;
+  text-decoration: none;
+
+  &.orange {
+    color: orange;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

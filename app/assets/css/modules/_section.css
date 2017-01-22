@@ -1,7 +1,17 @@
 .section {
   background-color: #fafafa;
 
-  &--orange {
+  &__heading {
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &--bg-orange {
     background-color: orange;
+  }
+
+  &--white {
+    color: #fff;
   }
 }

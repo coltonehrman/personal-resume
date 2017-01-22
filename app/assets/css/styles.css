@@ -468,6 +468,19 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a.orange {
+  color: orange;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 @-webkit-keyframes blink {
   15% { opacity: 1 }
   50% { opacity: 0 }
@@ -518,16 +531,31 @@ body {
   background-color: #fafafa;
 }
 
-.section--orange {
+.section__heading {
+  font-size: 3.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.section--bg-orange {
   background-color: orange;
 }
 
+.section--white {
+  color: #fff;
+}
+
 .hr {
+  border: 0;
+  border-top: 1px solid #000;
+  display: block;
+  height: 1px;
+  padding: 0;
   width: 7%;
 }
 
-.hr--black {
-  border-color: #000;
+.hr--white {
+  border-color: #fff;
 }
 
 .hr--thin {
@@ -586,14 +614,13 @@ body {
 
 .card {
   background-color: #fafafa;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .35);
   height: 100%;
   padding: 25px;
   position: relative;
 }
 
 .card__title {
-  border-bottom: 1px solid #000;
   font-size: 2rem;
   text-align: center;
 }
@@ -601,6 +628,15 @@ body {
 .card__subtitle {
   font-style: italic;
   font-weight: 300;
+}
+
+.card__points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card__description {
@@ -622,6 +658,10 @@ body {
 .card__list li span {
   position: relative;
   left: -5px;
+}
+
+.card--bg-orange {
+  background-color: orange;
 }
 
 .header {
@@ -682,10 +722,4 @@ body {
     -webkit-transform-origin: 10% 50%;
             transform-origin: 10% 50%;
   }
-}
-
-.currently__heading {
-  font-size: 3.5rem;
-  font-weight: 300;
-  text-align: center;
 }
