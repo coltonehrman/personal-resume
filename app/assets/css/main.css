@@ -1,4 +1,5 @@
 @import 'normalize.css';
+@import '../../../node_modules/flexboxgrid/dist/flexboxgrid';
 @import 'base/_variables';
 @import 'base/_mixins';
 @import 'base/_global';
@@ -8,6 +9,5 @@
 @import 'modules/_wrapper';
 @import 'modules/_section';
 @import 'modules/_hr';
-@import 'modules/_row';
 @import 'modules/_card';
 @import 'modules/_header';
